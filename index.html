@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Tavola Calda — Italian Kitchen & Bar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">&#127837;</span>
+        <span class="logo-text">La Tavola Calda</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#reservation" class="btn-reserve">Reserve</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">Est. 1998 &middot; Authentic Italian Cuisine</p>
+      <h1>Where Every Meal<br>Feels Like <em>Home</em></h1>
+      <p class="hero-desc">Handmade pastas, wood-fired pizzas, and recipes passed down through generations — served with heart in the middle of downtown.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">View Our Menu</a>
+        <a href="#reservation" class="btn btn-outline">Book a Table</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-images">
+        <div class="about-img about-img-1" role="img" aria-label="Chef preparing pasta"></div>
+        <div class="about-img about-img-2" role="img" aria-label="Interior of the restaurant"></div>
+      </div>
+      <div class="about-text">
+        <span class="section-tag">Our Story</span>
+        <h2>A Family Tradition Since 1998</h2>
+        <p>La Tavola Calda started as a small trattoria run by Nonna Maria and her son, Chef Antonio Bianchi. What began as a 20-seat kitchen has grown into one of the city's most beloved Italian restaurants — but the philosophy hasn't changed: use the best ingredients, cook with love, and treat every guest like family.</p>
+        <p>Our pasta is made fresh every morning. Our sauces simmer for hours. Our bread comes out of the oven minutes before it reaches your table. This isn't fast food — it's food made the right way.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">25+</span>
+            <span class="stat-label">Years Open</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">50k+</span>
+            <span class="stat-label">Guests Served</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">12</span>
+            <span class="stat-label">Family Recipes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Il Menu</span>
+        <h2>From Our Kitchen to Your Table</h2>
+        <p>Each dish prepared with imported Italian ingredients and local seasonal produce.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-tab="antipasti">Antipasti</button>
+        <button class="menu-tab" data-tab="pasta">Pasta</button>
+        <button class="menu-tab" data-tab="pizza">Pizza</button>
+        <button class="menu-tab" data-tab="secondi">Secondi</button>
+        <button class="menu-tab" data-tab="dolci">Dolci</button>
+      </div>
+
+      <!-- Antipasti -->
+      <div class="menu-panel active" id="tab-antipasti">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Bruschetta Classica</h3>
+              <span class="menu-price">$12</span>
+            </div>
+            <p>Grilled sourdough, heirloom tomatoes, fresh basil, garlic, extra virgin olive oil</p>
+            <span class="menu-badge">Popular</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Burrata e Prosciutto</h3>
+              <span class="menu-price">$18</span>
+            </div>
+            <p>Creamy burrata, San Daniele prosciutto, arugula, aged balsamic reduction</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Calamari Fritti</h3>
+              <span class="menu-price">$15</span>
+            </div>
+            <p>Lightly fried calamari, marinara dipping sauce, lemon wedge</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Carpaccio di Manzo</h3>
+              <span class="menu-price">$17</span>
+            </div>
+            <p>Thinly sliced beef tenderloin, arugula, capers, shaved Parmigiano-Reggiano</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Antipasto Board</h3>
+              <span class="menu-price">$24</span>
+            </div>
+            <p>Cured meats, aged cheeses, marinated olives, roasted peppers, grilled bread</p>
+            <span class="menu-badge">For Two</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Minestrone</h3>
+              <span class="menu-price">$10</span>
+            </div>
+            <p>Hearty vegetable soup, cannellini beans, ditalini pasta, Parmigiano crust</p>
+            <span class="menu-badge vegetarian">Vegetarian</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pasta -->
+      <div class="menu-panel" id="tab-pasta">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Spaghetti alla Carbonara</h3>
+              <span class="menu-price">$19</span>
+            </div>
+            <p>House-made spaghetti, guanciale, egg yolk, Pecorino Romano, black pepper</p>
+            <span class="menu-badge">Signature</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Pappardelle al Rag&ugrave;</h3>
+              <span class="menu-price">$22</span>
+            </div>
+            <p>Wide ribbon pasta, slow-braised beef and pork rag&ugrave;, Parmigiano</p>
+            <span class="menu-badge">Popular</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Cacio e Pepe</h3>
+              <span class="menu-price">$17</span>
+            </div>
+            <p>Tonnarelli, Pecorino Romano, cracked black pepper — simple perfection</p>
+            <span class="menu-badge vegetarian">Vegetarian</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Linguine alle Vongole</h3>
+              <span class="menu-price">$24</span>
+            </div>
+            <p>Fresh littleneck clams, white wine, garlic, chili flake, parsley</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Ravioli di Ricotta</h3>
+              <span class="menu-price">$20</span>
+            </div>
+            <p>Hand-folded ricotta ravioli, brown butter, sage, toasted walnuts</p>
+            <span class="menu-badge vegetarian">Vegetarian</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Lasagna della Nonna</h3>
+              <span class="menu-price">$21</span>
+            </div>
+            <p>Nonna Maria's original recipe — layers of pasta, bolognese, b&eacute;chamel, mozzarella</p>
+            <span class="menu-badge">Signature</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pizza -->
+      <div class="menu-panel" id="tab-pizza">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Margherita D.O.P.</h3>
+              <span class="menu-price">$16</span>
+            </div>
+            <p>San Marzano tomatoes, fior di latte, fresh basil, extra virgin olive oil</p>
+            <span class="menu-badge">Classic</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Diavola</h3>
+              <span class="menu-price">$18</span>
+            </div>
+            <p>Spicy nduja, sopressata, mozzarella, Calabrian chili, honey drizzle</p>
+            <span class="menu-badge">Spicy</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Funghi e Tartufo</h3>
+              <span class="menu-price">$22</span>
+            </div>
+            <p>Mixed wild mushrooms, fontina, truffle cream, thyme</p>
+            <span class="menu-badge vegetarian">Vegetarian</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Prosciutto e Rucola</h3>
+              <span class="menu-price">$20</span>
+            </div>
+            <p>Parma prosciutto, arugula, shaved Parmigiano, lemon vinaigrette</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Quattro Formaggi</h3>
+              <span class="menu-price">$19</span>
+            </div>
+            <p>Mozzarella, gorgonzola, fontina, Parmigiano-Reggiano</p>
+            <span class="menu-badge vegetarian">Vegetarian</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Salsiccia</h3>
+              <span class="menu-price">$19</span>
+            </div>
+            <p>House-made Italian sausage, roasted peppers, caramelized onions, mozzarella</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondi -->
+      <div class="menu-panel" id="tab-secondi">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Pollo alla Parmigiana</h3>
+              <span class="menu-price">$24</span>
+            </div>
+            <p>Breaded chicken cutlet, marinara, melted mozzarella, spaghetti side</p>
+            <span class="menu-badge">Popular</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Branzino al Forno</h3>
+              <span class="menu-price">$28</span>
+            </div>
+            <p>Whole roasted Mediterranean sea bass, lemon, capers, cherry tomatoes</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Osso Buco</h3>
+              <span class="menu-price">$32</span>
+            </div>
+            <p>Braised veal shank, saffron risotto, gremolata</p>
+            <span class="menu-badge">Chef's Pick</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Tagliata di Manzo</h3>
+              <span class="menu-price">$30</span>
+            </div>
+            <p>Sliced grilled ribeye, arugula, cherry tomatoes, aged balsamic, rosemary potatoes</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Melanzane alla Parmigiana</h3>
+              <span class="menu-price">$18</span>
+            </div>
+            <p>Layered eggplant, tomato sauce, mozzarella, basil — baked golden</p>
+            <span class="menu-badge vegetarian">Vegetarian</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Salmon Piccata</h3>
+              <span class="menu-price">$26</span>
+            </div>
+            <p>Pan-seared Atlantic salmon, lemon-caper butter, roasted asparagus</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dolci -->
+      <div class="menu-panel" id="tab-dolci">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Tiramis&ugrave;</h3>
+              <span class="menu-price">$11</span>
+            </div>
+            <p>Classic layered mascarpone, espresso-soaked ladyfingers, cocoa</p>
+            <span class="menu-badge">Signature</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Panna Cotta</h3>
+              <span class="menu-price">$10</span>
+            </div>
+            <p>Vanilla bean panna cotta, seasonal berry compote, mint</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Cannoli Siciliani</h3>
+              <span class="menu-price">$9</span>
+            </div>
+            <p>Crispy shells filled with sweet ricotta, chocolate chips, pistachios</p>
+            <span class="menu-badge">Popular</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Affogato</h3>
+              <span class="menu-price">$8</span>
+            </div>
+            <p>Vanilla gelato drowned in a shot of hot espresso, amaretti cookie</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Torta al Limone</h3>
+              <span class="menu-price">$11</span>
+            </div>
+            <p>Amalfi lemon cake, lemon curd, whipped cream, candied lemon zest</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Gelato Selection</h3>
+              <span class="menu-price">$7</span>
+            </div>
+            <p>Three scoops — ask your server for today's flavors</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specials Banner -->
+  <section class="specials section" id="specials">
+    <div class="specials-overlay"></div>
+    <div class="container specials-content">
+      <span class="section-tag light">Weekly Specials</span>
+      <h2>This Week at La Tavola</h2>
+      <div class="specials-grid">
+        <div class="special-card">
+          <div class="special-icon">&#127863;</div>
+          <h3>Wine Wednesday</h3>
+          <p>Half-price bottles from our Italian wine list every Wednesday evening. Featuring selections from Tuscany, Piedmont, and Sicily.</p>
+        </div>
+        <div class="special-card">
+          <div class="special-icon">&#127837;</div>
+          <h3>Sunday Supper</h3>
+          <p>A four-course family-style feast for $45/person. Antipasto, pasta, secondi, and dolci — the way Sunday was meant to be.</p>
+        </div>
+        <div class="special-card">
+          <div class="special-icon">&#127858;</div>
+          <h3>Lunch Express</h3>
+          <p>Monday through Friday, 11:30–2:00. Choose any pasta or personal pizza with a house salad for $16.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">La Galleria</span>
+        <h2>A Taste Through the Lens</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item-wide">
+          <div class="gallery-img" style="background-color: #d4a574;" role="img" aria-label="Fresh pasta being prepared">
+            <div class="gallery-placeholder">Fresh Pasta Prep</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img" style="background-color: #c9463d;" role="img" aria-label="Wood-fired pizza">
+            <div class="gallery-placeholder">Wood-Fired Pizza</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img" style="background-color: #8b6914;" role="img" aria-label="Tiramisu dessert">
+            <div class="gallery-placeholder">Tiramis&ugrave;</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img" style="background-color: #6b4226;" role="img" aria-label="Restaurant interior">
+            <div class="gallery-placeholder">Our Dining Room</div>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item-wide">
+          <div class="gallery-img" style="background-color: #a0522d;" role="img" aria-label="Chef at work">
+            <div class="gallery-placeholder">Chef Antonio at Work</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img" style="background-color: #7a6e5e;" role="img" aria-label="Wine selection">
+            <div class="gallery-placeholder">Wine Cellar</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img" style="background-color: #4a7c59;" role="img" aria-label="Fresh ingredients">
+            <div class="gallery-placeholder">Fresh Ingredients</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonianze</span>
+        <h2>What Our Guests Say</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"The carbonara here is the real deal — no cream, just perfectly emulsified egg and cheese. Best Italian food this side of Rome. We come back every month."</p>
+          <div class="review-author">
+            <div class="review-avatar">MR</div>
+            <div>
+              <strong>Michael R.</strong>
+              <span>Regular since 2019</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"We hosted our anniversary dinner here and the staff went above and beyond. The osso buco was melt-in-your-mouth, and the tiramisu was unforgettable."</p>
+          <div class="review-author">
+            <div class="review-avatar">SK</div>
+            <div>
+              <strong>Sarah K.</strong>
+              <span>Celebrated her 10th anniversary</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+          <p class="review-text">"Great food, warm atmosphere. The Sunday Supper is incredible value — four courses of authentic Italian cooking. Only wish they had more parking!"</p>
+          <div class="review-author">
+            <div class="review-avatar">DJ</div>
+            <div>
+              <strong>David J.</strong>
+              <span>First-time visitor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="reservation section" id="reservation">
+    <div class="container reservation-grid">
+      <div class="reservation-info">
+        <span class="section-tag">Prenotazione</span>
+        <h2>Reserve Your Table</h2>
+        <p>Join us for an evening of authentic Italian dining. For parties larger than 8, please call us directly.</p>
+        <div class="reservation-details">
+          <div class="detail-item">
+            <span class="detail-icon">&#128205;</span>
+            <div>
+              <strong>Location</strong>
+              <p>742 Mulberry Street<br>Downtown, NY 10012</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">&#128222;</span>
+            <div>
+              <strong>Phone</strong>
+              <p>(212) 555-0142</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">&#128336;</span>
+            <div>
+              <strong>Hours</strong>
+              <p>Mon–Thu: 11:30am – 10:00pm<br>Fri–Sat: 11:30am – 11:00pm<br>Sun: 12:00pm – 9:00pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="reservation-form" id="reservationForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Time</label>
+            <select id="time" name="time" required>
+              <option value="">Select time</option>
+              <option>11:30 AM</option>
+              <option>12:00 PM</option>
+              <option>12:30 PM</option>
+              <option>1:00 PM</option>
+              <option>5:00 PM</option>
+              <option>5:30 PM</option>
+              <option>6:00 PM</option>
+              <option>6:30 PM</option>
+              <option>7:00 PM</option>
+              <option>7:30 PM</option>
+              <option>8:00 PM</option>
+              <option>8:30 PM</option>
+              <option>9:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guests">Guests</label>
+            <select id="guests" name="guests" required>
+              <option value="">Party size</option>
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4 Guests</option>
+              <option>5 Guests</option>
+              <option>6 Guests</option>
+              <option>7 Guests</option>
+              <option>8 Guests</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="occasion">Occasion (Optional)</label>
+            <select id="occasion" name="occasion">
+              <option value="">Select</option>
+              <option>Birthday</option>
+              <option>Anniversary</option>
+              <option>Date Night</option>
+              <option>Business Dinner</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="notes">Special Requests</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Dietary restrictions, seating preferences, etc."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Request Reservation</button>
+        <p class="form-note">You'll receive a confirmation email within 1 hour.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact / Map Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Trovarci</span>
+        <h2>Find Us</h2>
+      </div>
+      <div class="map-placeholder">
+        <div class="map-inner">
+          <span class="map-pin">&#128205;</span>
+          <p><strong>742 Mulberry Street, Downtown, NY 10012</strong></p>
+          <p>Between Grand St. & Broome St. — Free street parking after 6pm</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-icon">&#127837;</span>
+          <span class="logo-text">La Tavola Calda</span>
+        </a>
+        <p>Authentic Italian cuisine in the heart of downtown since 1998. Every plate tells a story.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Yelp">YP</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#specials">Weekly Specials</a></li>
+          <li><a href="#reservation">Reservations</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Catering</a></li>
+        </ul>
+      </div>
+      <div class="footer-hours">
+        <h4>Hours</h4>
+        <ul>
+          <li><span>Mon – Thu</span><span>11:30am – 10pm</span></li>
+          <li><span>Fri – Sat</span><span>11:30am – 11pm</span></li>
+          <li><span>Sunday</span><span>12pm – 9pm</span></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Stay in Touch</h4>
+        <p>Get updates on specials, events, and seasonal menus.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="your@email.com" required>
+          <button type="submit" class="btn btn-primary">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 La Tavola Calda. All rights reserved. | This is a demo/tester site.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reservation Confirmation Modal -->
+  <div class="modal-overlay" id="confirmModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-icon">&#9989;</div>
+      <h3>Reservation Requested!</h3>
+      <p>Thank you, <span id="confirmName"></span>. We've received your reservation request for <span id="confirmDetails"></span>. A confirmation email will be sent shortly.</p>
+      <button class="btn btn-primary" id="modalBtn">Done</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
